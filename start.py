@@ -27,14 +27,14 @@ class randomOrderEuropeCountries():
 class germanyInfo():
   germany = {
   "Name": "Germany",
-  "Size": "540,854 km²",
+  "Size": "540,854 km²",
   "Year": 1939
   }
 
   print(germany)
 
   germany["Year"] = 2022
-  germany["Size"] = "357,588 km²"
+  germany["Size"] = "357,588 km²"
 
   print(germany)
     
