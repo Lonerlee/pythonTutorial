@@ -1,5 +1,5 @@
 #Tuples example
-class neighboursOfPoland():
+def neighboursOfPoland():
   polishNeighbours = ("Germany", "Czechia", "Slovakia", "Ukraine", "Belarus", "Russia", "Lithuania")
   allTexts = ("Type one of the following words - amount, biggest, smallest, wealthiest...", "nope")
 
@@ -18,13 +18,13 @@ class neighboursOfPoland():
     print("Unknown Command!")
 
 #Sets example
-class randomOrderEuropeCountries():
+def randomOrderEuropeCountries():
   randCountries = {"Russia", "Germany", "Poland", "Netherlands", "Denmark", "Sweden", "United Kingdom"}
   print("Some of the european countries in random order:")
   print(randCountries)
 
 #Dictionaries example
-class germanyInfo():
+def germanyInfo():
   germany = {
   "Name": "Germany",
   "Size": "540,854 km²",
