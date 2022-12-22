@@ -22,6 +22,11 @@ def randomOrderEuropeCountries():
   randCountries = {"Russia", "Germany", "Poland", "Netherlands", "Denmark", "Sweden", "United Kingdom"}
   print("Some of the european countries in random order:")
   print(randCountries)
+  
+  randCountries.add("Hungary")
+  
+  print("+1 more country in random place:")
+  print(randCountries)
 
 #Dictionaries example
 def germanyInfo():
