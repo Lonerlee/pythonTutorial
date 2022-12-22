@@ -28,6 +28,11 @@ def randomOrderEuropeCountries():
   print("+1 more country in random place:")
   print(randCountries)
 
+  randCountries.remove("Germany")
+  
+  print("Random countries without Germany:")
+  print(randCountries)
+
 #Dictionaries example
 def germanyInfo():
   germany = {
