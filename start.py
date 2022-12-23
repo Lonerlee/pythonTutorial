@@ -6,16 +6,17 @@ def neighboursOfPoland():
   print(allTexts[0])
   x = input()
 
-  if x == "amount":
-    print("There is " + str(len(polishNeighbours)) + " neighbours of Poland... and that is my lucky number!")
-  elif x == "biggest":
-    print("The biggest neighbour of Poland is " + polishNeighbours[5] + "... Unfortunately.")
-  elif x == "smallest":
-    print("Smallest neighbouring country of Poland is " + polishNeighbours[2] + " or " + polishNeighbours[6] + " but idk because I am bad at math and too lazy to check on Google lol.")
-  elif x == "wealthiest":
-    print("The wealthiest neighbouring country of Poland is " + polishNeighbours[0] + " but I really think that it is propably from someone elses gold!")
-  else:
-    print("Unknown Command!")
+  match x:
+    case "amount":
+      print("There is " + str(len(polishNeighbours)) + " neighbours of Poland... and that is my lucky number!")
+    case "biggest":
+      print("The biggest neighbour of Poland is " + polishNeighbours[5] + "... Unfortunately.")
+    case "smallest":
+      print("Smallest neighbouring country of Poland is " + polishNeighbours[2] + " or " + polishNeighbours[6] + " but idk because I am bad at math and too lazy to check on Google lol.")
+    case "wealthiest":
+      print("The wealthiest neighbouring country of Poland is " + polishNeighbours[0] + " but I really think that it is propably from someone elses gold!")
+    case _:
+      print("Unknown Command!")
 
 #Sets example
 def randomOrderEuropeCountries():
@@ -32,6 +33,7 @@ def randomOrderEuropeCountries():
   
   print("Random countries without Germany:")
   print(randCountries)
+
 
 #Dictionaries example
 def germanyInfo():
