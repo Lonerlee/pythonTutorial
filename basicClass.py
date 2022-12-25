@@ -1,4 +1,5 @@
 import datetime
+import math
 
 current_time = datetime.datetime.now()
 clock_time = current_time.strftime("%H:%M:%S")
@@ -18,3 +19,13 @@ clock1 = Clock("Big Grandmas Clock", clock_time)
 
 clock1.show_time()
 clock1.show_type()
+
+class radiusCircle:
+  def __init__(self, radius):
+    self.radius = radius
+
+  def area(self):
+    return self.radius ** 2 * math.pi
+
+circle = radiusCircle(25)
+print(circle.area())
