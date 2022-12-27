@@ -29,7 +29,11 @@ class radiusCircle:
 
   def diameter(self):
     return self.radius * 2
+    
+  def circumference(self):
+    return self.radius * 2 * math.pi
 
 circle = radiusCircle(25)
 print(circle.area())
 print(circle.diameter())
+print(circle.circumference())
