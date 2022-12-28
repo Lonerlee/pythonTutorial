@@ -50,6 +50,21 @@ def germanyInfo():
 
   print(germany)
     
+def polandInfo():
+  poland = {
+  "Name": "Germany",
+  "Size": "389,000 km²",
+  "Year": 1939
+  }
+
+  print(poland)
+
+  poland["Year"] = 2022
+  poland["Size"] = "322,575 km²"
+
+  print(poland)
+    
 neighboursOfPoland()
 randomOrderEuropeCountries()
 germanyInfo()
+polandInfo()
