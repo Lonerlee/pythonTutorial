@@ -41,6 +41,18 @@ class operationsCircle:
     return self.radius * 2 * math.pi
 
 circle = operationsCircle(25)
+
+class Square:
+    def __init__(self, l):
+        self.l = l
+    
+    @property
+    def area(self):
+        return self.l ** 2
+
+square = Square(7)
+
 print(circle.area())
 print(circle.diameter())
 print(circle.circumference())
+print(square.area)
