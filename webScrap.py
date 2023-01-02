@@ -12,3 +12,6 @@ for title in zupka.find_all('title'):
     pageTitle.append(title.text.strip())
 
 print(pageTitle)
+print(pageTitle)
+
+#Testing push
