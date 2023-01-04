@@ -3,7 +3,18 @@ import requests
 
 https = "https://"
 
-urlDefault = "https://www.youtube.com/watch?v=EOWP5Y7eErE"
+urlDefault = "www.google.com"
+decide = "Y"
+
+class Decision:
+  def __init__(self, decide):
+    self.decide = decide
+
+  def myfunc(self):
+    
+
+decide = input("Do you want to use your own page or do you want to use default one [" + urlDefault + "]? Type Y or N - ")
+
 urlDefault = input("Type in any URL and it will provide you with a page title - https://")
 
 page = requests.get(https + urlDefault)
