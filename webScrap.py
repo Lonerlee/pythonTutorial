@@ -7,9 +7,6 @@ urlDefault = "www.google.com"
 decide = "Y"
 
 class Decision:
-  def __init__(self, decide):
-    self.decide = decide
-
   def myfunc(self):
     decide = "Y"
     i = 0
@@ -25,7 +22,7 @@ class Decision:
         print("Error. Try to type single letter Y or N.")
 
 
-d1 = Decision("www.google.com")
+d1 = Decision()
 
 urlDefault = d1.myfunc()
 
