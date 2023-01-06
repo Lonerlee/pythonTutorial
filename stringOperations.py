@@ -1,5 +1,5 @@
-txt = str(input("Put here any text and see the results!"))
-word = str(input("Put here any word to see operations on the text!"))
+txt = str(input("Put here any text and see the results! "))
+word = str(input("Put here any word to see operations on the text! "))
 
 class stringPunch:
   def __init__(self, text, word):
