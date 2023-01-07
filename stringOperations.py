@@ -25,8 +25,6 @@ class stringPunch:
   #replaces word in string with @
   def replaceWord(self):
     print("Text with word replaced by @ looks like this(works only if letters are same size) - " + self.text.replace(word, "@"))
-  
-
 
 ppSmall = stringPunch(txt, word)
 
