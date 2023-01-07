@@ -14,3 +14,14 @@ with open("NewCSVFile.csv") as csvfile:
     reader = csv.DictReader(csvfile)
     nameOfData = reader.fieldnames
     print(nameOfData)
+
+#Creating a table with using CSV file
+with open('NewCSVFile.csv', 'r') as file:
+    reader = csv.reader(file)
+    
+    listaMistrzow = []
+    
+    for row in reader:
+        listaMistrzow.append(row)
+
+print(listaMistrzow)
