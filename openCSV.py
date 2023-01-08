@@ -1,4 +1,5 @@
 import csv
+from tabulate import tabulate
 
 file = open('NewCSVFile.csv')
 szukacz = csv.reader(file)
@@ -24,4 +25,4 @@ with open('NewCSVFile.csv', 'r') as file:
     for row in reader:
         listaMistrzow.append(row)
 
-print(listaMistrzow)
+print(tabulate(listaMistrzow))
