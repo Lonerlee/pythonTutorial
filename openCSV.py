@@ -25,4 +25,4 @@ with open('NewCSVFile.csv', 'r') as file:
     for row in reader:
         listaMistrzow.append(row)
 
-print(tabulate(listaMistrzow, headers='firstrow', tablefmt='fancy_grid'))
+print(tabulate(listaMistrzow, headers='firstrow', tablefmt='double_outline'))
