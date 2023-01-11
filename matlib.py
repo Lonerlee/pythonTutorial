@@ -1,23 +1,10 @@
 import matplotlib.pyplot as myGraph
 
-x = []
-y = []
-
 n = int(input("Type the number of data you want to create a graph with - "))
-n2 = n
 
-print("Now type in every data for X axis: ")
-for i in range(0, n):
-    ele = int(input())
-    
-    x.append(ele)
+x = list(map(int,input("Now type in every data for X axis: ").strip().split()))[:n]
 
-print("Now type in every data for Y axis: ")
-for i in range(0, n2):
-    ele = int(input())
-    
-    y.append(ele)
-
+y = list(map(int,input("Now type in every data for Y axis: ").strip().split()))[:n]
 
 myGraph.plot(x, y)
 
