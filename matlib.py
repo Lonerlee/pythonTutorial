@@ -12,9 +12,8 @@ myGraph.title(input("Add title for the graph - "))
 
 myGraph.xlabel(input("Add name for X axis - "))
 myGraph.ylabel(input("Add name for Y axis - "))
-myGraph.savefig("images/graph.png")
 
 myGraph.style.use('fivethirtyeight')
-myGraph.savefig("images/graphNewStyle.png")
+myGraph.savefig("images/graph.png")
 
 print("Graph got saved at images/graph.png")
