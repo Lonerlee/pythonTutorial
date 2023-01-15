@@ -24,6 +24,6 @@ print('Staris:')
 stairs = ''
 
 for char in name:
-    stairs = stairs + char
+    stairs += char
     print(stairs)
 
