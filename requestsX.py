@@ -1,6 +1,19 @@
-import requests
+import requests, re
 
-x = requests.get("https://api.dane.gov.pl/1.4/resources/44218,raport-z-miesiecznej-dziaalnosci-poz-maj-2022?lang=pl")
+CLEANR = re.compile('<.*?>') 
+
+def cleanhtml(raw_html):
+  cleantext = re.sub(CLEANR, '', raw_html)
+  return cleantext
+
+x = requests.get("https://api.dane.gov.pl/1.4/datasets/1434,obligacje-skarbowe-1?lang=pl")
 works = x.json()
 
-print(works['data']['attributes']['description'])
+print('Title:')
+print(works['data']['attributes']['category']['title'])
+
+print('Description:')
+print(cleanhtml(works['data']['attributes']['notes']))
+
+print('License:')
+print(works['data']['attributes']['license_name'])
