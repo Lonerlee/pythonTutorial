@@ -11,17 +11,22 @@ works = x.json()
 
 typeIn = input('Type in what you want to know about this data. Commands are - title, time, desc, lang - ')
 
-if typeIn == 'title':
-  print('Title:')
-  print(works['data']['attributes']['title'])
-elif typeIn == 'time':
-  print('Time of verification:')
-  print(works['data']['attributes']['verified'])
-elif typeIn == 'desc':
-  print('Description:')
-  print(cleanhtml(works['data']['attributes']['description']))
-elif typeIn == 'lang':
-  print('Language:')
-  print(works['meta']['params']['lang'])
-else:
-  print('Unknown command.')
+class getTheData:
+  if typeIn == 'title':
+    print('Title:')
+    print(works['data']['attributes']['title'])
+  elif typeIn == 'time':
+    print('Time of verification:')
+    print(works['data']['attributes']['verified'])
+  elif typeIn == 'desc':
+    print('Description:')
+    print(cleanhtml(works['data']['attributes']['description']))
+  elif typeIn == 'lang':
+    print('Language:')
+    print(works['meta']['params']['lang'])
+  else:
+    print('Unknown command.')
+
+gtd = getTheData()
+
+gtd
